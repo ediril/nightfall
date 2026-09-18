@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightfall settings</title>
+  <link rel="stylesheet" href="options.css">
+  <script src="settings.js" defer></script>
+  <script src="options.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="moon" aria-hidden="true">◐</span><h1>Nightfall</h1><p>A softer light for the web.</p></header>
+    <section>
+      <h2>Where it works</h2>
+      <fieldset id="mode"><legend>Mode</legend>
+        <label><input type="radio" name="mode" value="site"> Per site</label>
+        <label><input type="radio" name="mode" value="global"> Global</label>
+      </fieldset>
+      <p id="mode-description"></p>
+      <label id="global-control" hidden><input id="global-enabled" type="checkbox"> Dark mode on all websites</label>
+      <p class="hint">Click the toolbar N to turn dark mode on or off. Your choices stay saved, including when you restart Chrome.</p>
+    </section>
+    <section>
+      <h2>Make it comfortable</h2>
+      <p>These settings apply wherever Nightfall is on. Changes save automatically.</p>
+      <label class="slider-label" for="background">Background brightness <output id="background-value"></output></label>
+      <input id="background" type="range" min="10" max="60" step="1">
+      <label class="slider-label" for="text">Text brightness <output id="text-value"></output></label>
+      <input id="text" type="range" min="150" max="240" step="1">
+      <div id="preview"><strong>A quieter corner of the internet.</strong><p>Your background and text brightness, at a glance.</p></div>
+      <button id="reset" type="button">Reset brightness</button>
+    </section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <footer>Stored only in this browser. No accounts, tracking, or external services.<br>Already-dark pages may look inverted. Chrome's protected pages cannot be styled.</footer>
+  </main>
+</body>
+</html>

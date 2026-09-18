@@ -1,0 +1,24 @@
+:root { color-scheme: dark; font: 16px/1.6 system-ui, sans-serif; color: #c7c7c7; background: #161819; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 660px; padding: 48px 24px; margin: auto; }
+header { margin-bottom: 32px; }
+h1 { font-size: 32px; margin: 4px 0; color: #ecebe5; letter-spacing: -.7px; }
+h2 { font-size: 18px; color: #e2e2dc; margin: 0 0 16px; }
+p { margin: 10px 0; }
+.moon { color: #b2cdbb; font-size: 32px; }
+section { padding: 24px; border: 1px solid #353a3b; border-radius: 16px; background: #1d2021; margin-bottom: 20px; }
+fieldset { border: 0; padding: 0; display: flex; gap: 24px; }
+legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+label { cursor: pointer; }
+input { accent-color: #adcbb6; }
+input[type="range"] { width: 100%; margin: 8px 0 24px; }
+.slider-label { display: flex; justify-content: space-between; }
+output { color: #a8b3ad; font-variant-numeric: tabular-nums; }
+.hint, footer { color: #9fa6a3; font-size: 14px; }
+#preview { border-radius: 10px; padding: 24px; margin-bottom: 20px; }
+#preview strong { font-size: 19px; }
+button { font: inherit; color: #d5dfd7; background: #303936; border: 1px solid #56675d; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+:focus-visible { outline: 2px solid #c9e6d3; outline-offset: 5px; }
+#status { min-height: 26px; color: #b2cdbb; }
+[hidden] { display: none !important; }
