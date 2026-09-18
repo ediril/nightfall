@@ -4,14 +4,9 @@ A tiny Chrome extension: click its toolbar button to turn dark mode on or off
 for the current tab. An **ON** badge shows when it is enabled. No dependencies,
 build step, account, analytics, remote code, or network requests.
 
-## Install
-
-1. Open `chrome://extensions` in Chrome.
-2. Enable **Developer mode** in the top right.
-3. Click **Load unpacked** and select this `dark-mode` folder.
-4. Open Chrome's extensions menu (the puzzle piece) and pin **Nightfall**.
-5. Visit Google Docs, Sheets, Drive, Gmail, or another website and click the button.
-   Click again to restore the page.
+Originally built for Google Docs, Sheets, Drive, and Gmail, Nightfall also works
+on other websites, including Jira and GitHub. Its simple CSS filter works broadly,
+though results can vary by site.
 
 The setting applies only to that tab and resets on reload or navigation. Switching
 tabs or suspending the extension's background worker does not reset it. A **!**
@@ -49,6 +44,18 @@ Print styles are unaffected.
   be styled. File URLs require Chrome's separate file-access setting.
 - Google apps change frequently. This version has not been visually verified in
   signed-in Google apps; use the checklist below to confirm it in your account.
+
+## Manual installation
+
+To install directly from the source files without the Chrome Web Store:
+
+1. Download or clone this project and unzip it if needed.
+2. Open `chrome://extensions` in Chrome.
+3. Enable **Developer mode** in the top right.
+4. Click **Load unpacked** and select the project folder containing `manifest.json`.
+5. Open Chrome's extensions menu (the puzzle piece) and pin **Nightfall**.
+6. Visit a website and click the button to turn dark mode on. Click again to
+   restore the page.
 
 ## Check it
 
