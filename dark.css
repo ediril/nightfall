@@ -1,0 +1,18 @@
+/* A display-only filter also covers the canvas editors in Docs and Sheets.
+   Keep canvases filtered: undoing them would leave the document/grid bright. */
+@media screen {
+  html {
+    color-scheme: light !important;
+    background-color: #fff !important;
+    /* Map white to deep charcoal (#1b1b1b) and black to muted gray (#bebebe). */
+    filter: invert(1) hue-rotate(180deg) contrast(0.75) brightness(0.85) !important;
+  }
+
+  /* Undo inversion for ordinary photos and videos, keeping the softer contrast.
+     Images painted inside
+     canvases or CSS backgrounds cannot be separately restored this way. */
+  img,
+  video {
+    filter: invert(1) hue-rotate(180deg) !important;
+  }
+}

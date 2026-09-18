@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Nightfall",
+  "version": "1.0.0",
+  "description": "Click to darken the current tab. Local CSS only, no tracking or external services.",
+  "minimum_chrome_version": "102",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Nightfall — click to turn on" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"
+  }
+}
