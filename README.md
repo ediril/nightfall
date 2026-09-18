@@ -89,3 +89,12 @@ To install directly from the source files without the Chrome Web Store:
 When updating from version 1.0, reload Nightfall in `chrome://extensions`, accept
 the new website access permission if prompted, and refresh existing tabs once
 to clear the old filter. After that, navigation and reloads keep your settings.
+
+## Support
+
+Nightfall is a free hobby project, provided as-is. Support and updates are offered
+as time permits; fixes and compatibility with every website are not guaranteed.
+
+## License
+
+Licensed under the [MIT License](LICENSE). Copyright (c) 2026 Emrah Diril.
