@@ -13,9 +13,9 @@ A **!** badge means Chrome could not apply the change; hover for details.
 
 ## Settings
 
-Right-click the toolbar **N** and choose **Options**, or open `chrome://extensions`,
+Right-click the toolbar **moon icon** and choose **Options**, or open `chrome://extensions`,
 find Nightfall, and choose **Details → Extension options**. There is no popup:
-clicking **N** directly toggles dark mode.
+clicking the **moon icon** directly toggles dark mode.
 
 - **Per site** (default): the button remembers on/off for the current hostname.
   All tabs on that hostname update together. Subdomains have separate choices,
