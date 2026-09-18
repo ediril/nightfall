@@ -4,8 +4,8 @@
   html {
     color-scheme: light !important;
     background-color: #fff !important;
-    /* Map white to deep charcoal (#1b1b1b) and black to muted gray (#bebebe). */
-    filter: invert(1) hue-rotate(180deg) contrast(0.75) brightness(0.85) !important;
+    /* Map white to deep charcoal (#1b1b1b) and black to soft gray (#c7c7c7). */
+    filter: invert(1) hue-rotate(180deg) contrast(0.76) brightness(0.885) !important;
   }
 
   /* Undo inversion for ordinary photos and videos, keeping the softer contrast.
